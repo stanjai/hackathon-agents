@@ -79,7 +79,7 @@ export const SUPPORTED_APIS: Record<string, ApiConfig> = {
     envVars: {
       "INTERCOM_APP_ID": "<your-workspace-id>",
       "INTERCOM_ACCESS_TOKEN": "<your-access-token>",
-      "INTERCOM_API_BASE": "https://api-iam.intercom.io"
+      "INTERCOM_API_BASE": "https://api.intercom.io"  // Use api.eu.intercom.io for EU, api.au.intercom.io for AU
     },
     isWebOnly: false,
     setupCode: `
@@ -147,7 +147,7 @@ const client = new Intercom.Client({ token: process.env.INTERCOM_ACCESS_TOKEN })
     description: "ML model deployment platform",
     npmDependencies: ["axios"],
     envVars: {
-      "TRUEFOUNDRY_ENDPOINT": "https://api.truefoundry.com",
+      "TRUEFOUNDRY_ENDPOINT": "https://your-control-plane.truefoundry.com/api/llm",  // Replace with your control plane URL
       "TRUEFOUNDRY_TOKEN": "<token>"
     }
   },
