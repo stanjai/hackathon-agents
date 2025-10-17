@@ -10,6 +10,10 @@
     "test": "ts-node testIntegrator.ts",
     "test:quick": "ts-node testIntegrator.ts --quick",
     "validate": "ts-node testIntegrator.ts --validate",
+    "integrate": "ts-node integrateAndCommit.ts",
+    "integrate:web": "ts-node integrateAndCommit.ts --web-apis",
+    "config:validate": "ts-node configLoader.ts validate",
+    "config:list": "ts-node configLoader.ts list",
     "clean": "rm -rf dist",
     "prepare": "npm run build"
   },
